@@ -1,0 +1,41 @@
+.p{
+    width: 30%;
+    height: 40vh;
+    margin:20px 10px;
+    border: 2px solid rgb(243,242,242);
+    /* border-radius:top-left top-right bottom-left bottom-right 
+       so values of short hand property of border-radius is clockwise from first corner(top-right)
+    */
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+.p-browser{
+    height: 20px;
+    background-color: rgb(243,242,242);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index:2;
+}
+.p-cricle{
+    border-radius: 50%;
+    width:6px;
+    height:6px;
+    background-color: white;
+    margin:3px;
+}
+.p-img{
+    width: 100%;
+    transition: all 5s ease-in ;
+}
+.p:hover .p-img{
+    transform: translateY(-80%);
+}
+
+@media screen and (max-width:480px){
+    .p{
+        width:40%;
+        height: 20vh;
+    }
+}
+
