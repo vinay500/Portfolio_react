@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/Portfolio_react/static/css/main.9e6dedc2.chunk.css",
-    "main.js": "/Portfolio_react/static/js/main.bb5ee8df.chunk.js",
-    "main.js.map": "/Portfolio_react/static/js/main.bb5ee8df.chunk.js.map",
+    "main.css": "/Portfolio_react/static/css/main.83d575e3.chunk.css",
+    "main.js": "/Portfolio_react/static/js/main.e91b6709.chunk.js",
+    "main.js.map": "/Portfolio_react/static/js/main.e91b6709.chunk.js.map",
     "runtime-main.js": "/Portfolio_react/static/js/runtime-main.0e462f1f.js",
     "runtime-main.js.map": "/Portfolio_react/static/js/runtime-main.0e462f1f.js.map",
-    "static/js/2.f36e7dbb.chunk.js": "/Portfolio_react/static/js/2.f36e7dbb.chunk.js",
-    "static/js/2.f36e7dbb.chunk.js.map": "/Portfolio_react/static/js/2.f36e7dbb.chunk.js.map",
+    "static/js/2.2944b729.chunk.js": "/Portfolio_react/static/js/2.2944b729.chunk.js",
+    "static/js/2.2944b729.chunk.js.map": "/Portfolio_react/static/js/2.2944b729.chunk.js.map",
     "index.html": "/Portfolio_react/index.html",
-    "static/css/main.9e6dedc2.chunk.css.map": "/Portfolio_react/static/css/main.9e6dedc2.chunk.css.map",
-    "static/js/2.f36e7dbb.chunk.js.LICENSE.txt": "/Portfolio_react/static/js/2.f36e7dbb.chunk.js.LICENSE.txt",
+    "static/css/main.83d575e3.chunk.css.map": "/Portfolio_react/static/css/main.83d575e3.chunk.css.map",
+    "static/js/2.2944b729.chunk.js.LICENSE.txt": "/Portfolio_react/static/js/2.2944b729.chunk.js.LICENSE.txt",
     "static/media/MyPic.52fd705f.png": "/Portfolio_react/static/media/MyPic.52fd705f.png",
     "static/media/address.a01cb8cc.png": "/Portfolio_react/static/media/address.a01cb8cc.png",
     "static/media/award.a796a64f.png": "/Portfolio_react/static/media/award.a796a64f.png",
+    "static/media/cowin.237706fd.png": "/Portfolio_react/static/media/cowin.237706fd.png",
     "static/media/email.a49e0158.png": "/Portfolio_react/static/media/email.a49e0158.png",
+    "static/media/jlms.566f0321.png": "/Portfolio_react/static/media/jlms.566f0321.png",
     "static/media/moon.3bea3d39.png": "/Portfolio_react/static/media/moon.3bea3d39.png",
     "static/media/phone.d90a6d23.png": "/Portfolio_react/static/media/phone.d90a6d23.png",
+    "static/media/portfolio.b981c45c.png": "/Portfolio_react/static/media/portfolio.b981c45c.png",
     "static/media/sun.f794832a.png": "/Portfolio_react/static/media/sun.f794832a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0e462f1f.js",
-    "static/js/2.f36e7dbb.chunk.js",
-    "static/css/main.9e6dedc2.chunk.css",
-    "static/js/main.bb5ee8df.chunk.js"
+    "static/js/2.2944b729.chunk.js",
+    "static/css/main.83d575e3.chunk.css",
+    "static/js/main.e91b6709.chunk.js"
   ]
 }
