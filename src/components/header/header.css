@@ -1,0 +1,59 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgb(234, 233, 233);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.header-left a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+.name{
+    cursor: pointer;
+    transition: color 0.7s ease;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color:black;
+}
+.name:hover{
+    color: #34e12e;
+}
+.logo{
+    width: 50px;
+    background-color: aqua;
+    height: 50px;
+    border-radius: 50%;
+    margin:10px;
+}
+.header-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+}
+.header-right li{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.7s ease;
+    font-weight: 600;
+    font-size: 16px;
+}
+.header-right a{
+    text-decoration: none;
+    color: black;
+}
+.header-right li:hover{
+    color: #25dd1f;
+}
+.toggle_li{
+    display: flex;
+    align-items: center;
+}

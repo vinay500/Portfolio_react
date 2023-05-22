@@ -32,7 +32,8 @@ const Contact = () => {
         console.log(done)
     }
     return(
-        <div className="c">
+        <div  id="Contact">
+            <div className="c">
             <div className="c-bg"></div>
             <div className="c-wrapper">
                 <div className="c-left">
@@ -74,6 +75,8 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+        </div>
+        
     )
 }
 

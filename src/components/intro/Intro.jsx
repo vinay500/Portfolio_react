@@ -4,7 +4,7 @@ import MyImg from '../../img/MyPic.png'
 
 const Intro = () => {
     return(
-        <div className="i">
+        <div className="i" id="Home">
             <div className="i-left">
                 <div className="i-left-wrapper">
                     <h2 id='hello_my_name_is'>Hello, My name is </h2>

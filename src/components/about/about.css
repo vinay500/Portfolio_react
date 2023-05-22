@@ -1,25 +1,37 @@
 .a{
-    height: 100vh;
+    padding-top: 60px;
+    height: 50vh;
     display: flex;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .a-left{
     flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
     position: relative;
-    height: 100%;
+    height: 80%;
+    margin: auto 0;
    
 }
 .a-right{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    position: relative;
+    height: 90%;
+    margin: auto 0;
+   
 }
-.a-card.bg{
+/* .a-card.bg{
     position: absolute;
     top:50px;
     left:50px;
-    /* make sure this color matches the image */
     background-color: rgb(100, 99, 99);
     z-index: -1;
     
@@ -28,19 +40,11 @@
 .a-card{
     width: 60%;
     height: 70vh;
-    /* both border-radius and overflow together crop the image */
     border-radius: 30px;
     overflow: hidden;
-}
-.a-img{
-    width:100%;
-    height:100%;
-}
-.a-award-img{
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-}
+} */
+
+
 .a-title{
     font-weight:400;
 }
@@ -49,21 +53,24 @@
 }
 .a-desc{
     font-weight:300;
+    width: 80%;
 }
-.a-award{
-    margin-top:50px;
+.a-skills{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.a-award-texts{
-    width: 70%;
+
+.a-skill{
+    background-color: #59b256;
+    width: 25%;
+    padding: 10px;
+    /* border-radius: 10%; */
+    margin:10px;
+    color:white;
+    text-align: center;
 }
-.a-award-title{
-    font-weight: bold;
-    color:#555;
-    margin-bottom: 10px;
-}
+
+
 
 @media screen and (max-width:480px){
     .a{

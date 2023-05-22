@@ -1,6 +1,10 @@
 .p{
-    width: 30%;
-    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+.p-demo{
+    width: 45%;
+    height: 50vh;
     margin:20px 10px;
     border: 2px solid rgb(243,242,242);
     /* border-radius:top-left top-right bottom-left bottom-right 
@@ -26,10 +30,56 @@
 }
 .p-img{
     width: 100%;
-    transition: all 5s ease-in ;
+    transition: all 3s ease-in ;
 }
-.p:hover .p-img{
-    transform: translateY(-80%);
+.p-img:hover{
+    transform: translateY(-60%);
+}
+.p-desc{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    width: 45%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.p-desc-about{
+    display: flex;
+    flex-direction: column;
+    /* height: 60%; */
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+.p-desc-about-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.p-desc-about-desc{
+    display: flex;
+    align-items: flex-start;
+    font-weight: 300;
+}
+.p-desc-skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 0px;
+}
+.p-desc-btn_div{
+
+}
+.p-desc-btn_div a{
+    margin-right:10px ;
+}
+.p-desc-btns{
+
+}
+.p-desc-btns button{
+    margin: 0 10px;
+} 
+button:hover{
+    resize: 0.8;
 }
 
 @media screen and (max-width:480px){
