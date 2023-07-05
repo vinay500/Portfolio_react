@@ -20,8 +20,8 @@
     flex:1;
 }
 .c-title{
-    font-size: 60px;
-    width: 80%;
+    font-size: 40px;
+    width: 90%;
 }
 .c-info-item{
     display: flex;
@@ -42,7 +42,7 @@ form{
     margin-top: 10px;
 }
 input{
-    width: 50%;
+    width: 90%;
     height: 50px;
     border: none;
     border-bottom: 1px solid black;
@@ -84,8 +84,29 @@ button{
 .thank_you_msg_close_btn:hover{
     cursor: pointer;
 }
-
-@media screen and (max-width:480px){
+@media screen and (max-width:700px){
+    .c-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    .c-title{
+        font-size: 35px;
+        width: 90%;
+    }
+    .c-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .c-info-item{
+        width: 45%;
+        margin:25px 0;
+    }
+    #address{
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px){
     .c-wrapper{
         flex-direction: column;
         padding: 0 50px;

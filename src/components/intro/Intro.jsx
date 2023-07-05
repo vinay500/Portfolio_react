@@ -7,7 +7,7 @@ const Intro = () => {
         <div className="i" id="Home">
             <div className="i-left">
                 <div className="i-left-wrapper">
-                    <h2 id='hello_my_name_is'>Hello, My name is </h2>
+                    <h2 id='hello_my_name_is'>Hello, I am </h2>
                     <h2 id='name'>Vinay Madugula</h2>
                     <div className="i-title">
                         <div className="i-title-wrapper">
@@ -18,10 +18,10 @@ const Intro = () => {
                             <div className="i-title-item">Full Stack Developer</div> */}
                         </div>
                     </div>
-                    <p className="i-desc">
+                    {/* <p className="i-desc">
                         I design and develop services for customers of all sizes,specializing in creating stylish, 
                         modern websites, web services and online stores.
-                    </p>
+                    </p> */}
                 </div>
                 <svg
                     width="75"
@@ -85,6 +85,7 @@ const Intro = () => {
                 <div className="i-bg"></div>
                 {/* <img src={MyImg} alt="" className="i-img" /> */}
             </div>
+            <br/>
         </div>
     )
 }

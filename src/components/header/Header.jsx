@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState,useEffect } from "react";
 import Toggle from '../toggle/toggle';
 import './header.css';
 // import { Link } from "react-router-dom";
@@ -6,7 +6,14 @@ import { HashLink as Link} from 'react-router-hash-link';
 
 
  const Header = ()=>{
+
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+  console.log('showMenu:',showMenu)
     return(
+      <>
         <div className="header" id="#Home">
             <div className="header-left">
                 <Link to='#Home' smooth>
@@ -15,26 +22,195 @@ import { HashLink as Link} from 'react-router-hash-link';
                 </Link>
             </div>
             <ul className="header-right">
-                <Link to='#Home' smooth><li>Home</li></Link>
-                <Link to='#About' smooth><li>About</li></Link>
-                <Link to='#Project' smooth><li>Projects</li></Link>
-                <Link to='#Contact' smooth><li>Contact</li></Link>
-                <li className="toggle_li"><Toggle/></li>
-            </ul>
+              <Link to='#Home' smooth><li>Home</li></Link>
+              <Link to='#About' smooth><li>About</li></Link>
+              <Link to='#Project' smooth><li>Projects</li></Link>
+              <Link to='#Contact' smooth><li>Contact</li></Link>
+              <li className="toggle_li"><Toggle/></li>
+           </ul>
+            <div className={`menu-toggle ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
+             <span></span>
+             <span></span>
+             <span></span>
+           </div>
         </div>
-        // <div className="header">
-        //     <div className="header-left">
-        //             <div className="logo"></div>
-        //             <div className="name">VINAY</div>
-        //     </div>
-        //     <ul className="header-right">
-        //         <li>Home</li>
-        //         <li>About</li>
-        //         <li>Projects</li>
-        //         <li>Contact</li>
-        //         <li className="toggle_li"><Toggle/></li>
-        //     </ul>
-        // </div>
+        {showMenu?
+          <div className="mobile_header">
+            <ul>
+              <Link to='#Home' smooth><li>Home</li></Link>
+              <Link to='#About' smooth><li>About</li></Link>
+              <Link to='#Project' smooth><li>Projects</li></Link>
+              <Link to='#Contact' smooth><li>Contact</li></Link>
+              <li className="toggle_li"><Toggle/></li>
+            </ul>
+          </div>  
+        :""}
+    </>
+        
     )
 }
+
+
+// -----------------------------------------------------------------
+// const Header = () => {
+//   const [showMenu, setShowMenu] = useState(false);
+//   const [width, setWidth] = useState(0)
+
+//   const toggleMenu = () => {
+//     setShowMenu(!showMenu);
+//   };
+
+ 
+  
+//   useEffect(() => {
+//     function handleResize() {
+//       setWidth(window.innerWidth)
+//     }
+    
+//     window.addEventListener("resize", handleResize)
+    
+//     handleResize()
+    
+//     return () => { 
+//       window.removeEventListener("resize", handleResize)
+//     }
+//   }, [setWidth])
+
+//   return (
+//     <div className="header" id="#Home">
+//       <div className="header-left">
+//         <Link to="#Home" smooth>
+//           {/* <div className="logo"></div> */}
+//           <div className="name">VINAY</div>
+//         </Link>
+//       </div>
+//       {width < 750 ? (
+//         <>
+//           {showMenu && (
+//             <ul className="header-right">
+//               <Link to="#Home" smooth>
+//                 <li>Home</li>
+//               </Link>
+//               <Link to="#About" smooth>
+//                 <li>About</li>
+//               </Link>
+//               <Link to="#Project" smooth>
+//                 <li>Projects</li>
+//               </Link>
+//               <Link to="#Contact" smooth>
+//                 <li>Contact</li>
+//               </Link>
+//             </ul>
+//           )}
+//           <div className={`menu-toggle ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
+//             <span></span>
+//             <span></span>
+//             <span></span>
+//           </div>
+//         </>
+//       ) : (
+//         <ul className="header-right">
+//           <Link to="#Home" smooth>
+//             <li>Home</li>
+//           </Link>
+//           <Link to="#About" smooth>
+//             <li>About</li>
+//           </Link>
+//           <Link to="#Project" smooth>
+//             <li>Projects</li>
+//           </Link>
+//           <Link to="#Contact" smooth>
+//             <li>Contact</li>
+//           </Link>
+//           <li className="toggle_li">
+//             <Toggle />
+//           </li>
+//         </ul>
+//       )}
+//     </div>
+//   );
+// };
+
+
+// -----------------------------------------------------------------
+
+
+
+// const Header = () => {
+//   const [showMenu, setShowMenu] = useState(false);
+//   const [width, setWidth] = useState(0)
+
+//   const toggleMenu = () => {
+//     setShowMenu(!showMenu);
+//   };
+//   useEffect(() => {
+//         function handleResize() {
+//           setWidth(window.innerWidth)
+//         }
+//         window.addEventListener("resize", handleResize)
+//         handleResize();
+//         return () => { 
+//           window.removeEventListener("resize", handleResize)
+//         }
+//       }, [setWidth])
+
+//   return (
+//     <div className="header" id="#Home">
+//       <div className="header-left">
+//         <Link to="#Home" smooth>
+//           {/* <div className="logo"></div> */}
+//           <div className="name">VINAY</div>
+//         </Link>
+//       </div>
+//       {width < 750 ? (
+//         <>
+//           <div className={`menu-toggle ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
+//             <span></span>
+//             <span></span>
+//             <span></span>
+//           </div>
+//           <br></br>
+//           {showMenu && (
+//             <ul className="menu-list">
+//               <Link to="#Home" smooth>
+//                 <li>Home</li>
+//               </Link>
+//               <Link to="#About" smooth>
+//                 <li>About</li>
+//               </Link>
+//               <Link to="#Project" smooth>
+//                 <li>Projects</li>
+//               </Link>
+//               <Link to="#Contact" smooth>
+//                 <li>Contact</li>
+//               </Link>
+//             </ul>
+//           )}
+//         </>
+//       ):(
+//         <ul className="header-right">
+//           <Link to="#Home" smooth>
+//             <li>Home</li>
+//           </Link>
+//           <Link to="#About" smooth>
+//             <li>About</li>
+//           </Link>
+//           <Link to="#Project" smooth>
+//             <li>Projects</li>
+//           </Link>
+//           <Link to="#Contact" smooth>
+//             <li>Contact</li>
+//           </Link>
+//           {/* <li className="toggle_li">
+//             <Toggle />
+//           </li> */}
+//         </ul>
+//       )}
+//     </div>
+//   );
+// };
+
+
+
+
 export default Header;

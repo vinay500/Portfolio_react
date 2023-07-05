@@ -15,10 +15,11 @@
 .i-left-wrapper{
     padding: 50px;
     height: 50%;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    line-height: 40px;
+    align-items: center;
 }
 #hello_my_name_is{
     font-weight: 200;
@@ -37,11 +38,11 @@
 .i-title{
     height: 50px;
     overflow:hidden;
+    margin:15px;
 }
 .i-title-wrapper{
     height: 100%;
     animation: move 10s ease-in-out infinite alternate;
-
 }
 @keyframes move {
     50%{
@@ -85,7 +86,11 @@
     right: 0;
     z-index: 1;
 }
-
+@media screen and (max-width:1000px){
+    .i-right{
+        display: none;
+    }
+}
 @media screen and (max-width:480px){
     .i{
         flex-direction: column;
@@ -99,6 +104,9 @@
     }
     .i-desc{
         display: none;
+    }
+    .i-title-item{
+        font-size: 30px;
     }
 }
 

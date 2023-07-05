@@ -47,7 +47,7 @@ const Contact = () => {
                             <img src={Email} alt=""  className='c-icon'/>
                             vinaymadugula1@gmail.com
                         </div>
-                        <div className="c-info-item">
+                        <div className="c-info-item" id='address'>
                             <img src={Address} alt=""  className='c-icon'/>
                             1-85 Gambhirpoor, Dubbak, Siddipet, Telangana - 502108
                         </div>

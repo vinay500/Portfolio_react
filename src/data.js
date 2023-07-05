@@ -1,6 +1,8 @@
-import cowin_img from './img/cowin.png';
+import cowin_img from './img/cowin project demo complete image.jpg';
 import jlms_img from './img/jlms.png';
-import portfolio_img from './img/portfolio.png'
+import portfolio_img from './img/portfolio.png';
+import todo_img from './img/todo project demo complete image.jpg';
+
 
 const products = [
     {
@@ -9,24 +11,24 @@ const products = [
       img:cowin_img,
       desc:'Cowin is an website which is an replica of Cowin where Users can Register and Loign and can Book slots for Vaccination',
       skills:['Django','HTML','CSS'],
-      view_link: "http://lama.dev",
+      view_link: "#",
       github_link:'https://github.com/vinay500/cowin'
     },
     {
       id: 2,
-      title:'Library Management System',
-      img:jlms_img,
+      title:'Todo App',
+      img:todo_img,
       desc:'Website Users can Register , Login and add Book details',
-      skills:['Django','HTML','CSS'],
-      view_link: "http://lama.dev",
-      github_link:'https://github.com/vinay500/LMS'
+      skills:['Django','React'],
+      view_link: "#",
+      github_link:'#'
     },
     {
       id: 3,
       title:'Portolio',
       img:portfolio_img,
-      desc:'this is my resume as a website',
-      skills:['Reactjs','HTML','CSS'],
+      desc:'This is my Portfolio showcasing my ',
+      skills:['Reactjs'],
       view_link: "http://lama.dev",
       github_link:'https://github.com/vinay500/LMS'
     },
