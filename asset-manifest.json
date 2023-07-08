@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio_react/static/css/main.c4c1aa45.chunk.css",
-    "main.js": "/Portfolio_react/static/js/main.5e4de1cd.chunk.js",
-    "main.js.map": "/Portfolio_react/static/js/main.5e4de1cd.chunk.js.map",
+    "main.css": "/Portfolio_react/static/css/main.84427485.chunk.css",
+    "main.js": "/Portfolio_react/static/js/main.f901001d.chunk.js",
+    "main.js.map": "/Portfolio_react/static/js/main.f901001d.chunk.js.map",
     "runtime-main.js": "/Portfolio_react/static/js/runtime-main.0e462f1f.js",
     "runtime-main.js.map": "/Portfolio_react/static/js/runtime-main.0e462f1f.js.map",
     "static/js/2.6c389d28.chunk.js": "/Portfolio_react/static/js/2.6c389d28.chunk.js",
     "static/js/2.6c389d28.chunk.js.map": "/Portfolio_react/static/js/2.6c389d28.chunk.js.map",
     "index.html": "/Portfolio_react/index.html",
-    "static/css/main.c4c1aa45.chunk.css.map": "/Portfolio_react/static/css/main.c4c1aa45.chunk.css.map",
+    "static/css/main.84427485.chunk.css.map": "/Portfolio_react/static/css/main.84427485.chunk.css.map",
     "static/js/2.6c389d28.chunk.js.LICENSE.txt": "/Portfolio_react/static/js/2.6c389d28.chunk.js.LICENSE.txt",
     "static/media/MyPic.52fd705f.png": "/Portfolio_react/static/media/MyPic.52fd705f.png",
     "static/media/address.a01cb8cc.png": "/Portfolio_react/static/media/address.a01cb8cc.png",
     "static/media/award.a796a64f.png": "/Portfolio_react/static/media/award.a796a64f.png",
     "static/media/cowin project demo complete image.d18dac51.jpg": "/Portfolio_react/static/media/cowin project demo complete image.d18dac51.jpg",
     "static/media/email.a49e0158.png": "/Portfolio_react/static/media/email.a49e0158.png",
+    "static/media/green portfolio logo.e4bb7cf3.png": "/Portfolio_react/static/media/green portfolio logo.e4bb7cf3.png",
     "static/media/jlms.566f0321.png": "/Portfolio_react/static/media/jlms.566f0321.png",
     "static/media/moon.3bea3d39.png": "/Portfolio_react/static/media/moon.3bea3d39.png",
     "static/media/phone.d90a6d23.png": "/Portfolio_react/static/media/phone.d90a6d23.png",
@@ -25,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.0e462f1f.js",
     "static/js/2.6c389d28.chunk.js",
-    "static/css/main.c4c1aa45.chunk.css",
-    "static/js/main.5e4de1cd.chunk.js"
+    "static/css/main.84427485.chunk.css",
+    "static/js/main.f901001d.chunk.js"
   ]
 }
