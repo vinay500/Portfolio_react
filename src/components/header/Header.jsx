@@ -3,6 +3,7 @@ import Toggle from '../toggle/toggle';
 import './header.css';
 // import { Link } from "react-router-dom";
 import { HashLink as Link} from 'react-router-hash-link';
+import profile_pic from '../../img/green portfolio logo.png';
 
 
  const Header = ()=>{
@@ -17,7 +18,9 @@ import { HashLink as Link} from 'react-router-hash-link';
         <div className="header" id="#Home">
             <div className="header-left">
                 <Link to='#Home' smooth>
-                    <div className="logo"></div>
+                    <div className="logo">
+                      <img  src={profile_pic} style={{width:'53px',height:'52px'}}/>
+                    </div>
                     <div className="name">VINAY</div>
                 </Link>
             </div>

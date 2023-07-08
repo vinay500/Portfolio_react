@@ -1,6 +1,7 @@
 {
   "name": "new",
   "version": "0.1.0",
+  "homepage": "https://vinay500.github.io/Portfolio_react",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -42,6 +43,5 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  },
-  "homepage": "https://vinay500.github.io/Portfolio_react"
+  }
 }

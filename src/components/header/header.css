@@ -46,7 +46,7 @@
 }
 .logo{
   width: 50px;
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 50px;
   border-radius: 50%;
   margin:10px;
