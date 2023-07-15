@@ -190,7 +190,7 @@ button:hover{
 }
 .p-desc-skills{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin: 10px 10px 10px 0px;
 }
