@@ -12,14 +12,14 @@ import profile_pic from '../../img/green portfolio logo.png';
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-  console.log('showMenu:',showMenu)
+  // console.log('showMenu:',showMenu)
     return(
       <>
         <div className="header" id="#Home">
             <div className="header-left">
                 <Link to='#Home' smooth>
                     <div className="logo">
-                      <img  src={profile_pic} style={{width:'53px',height:'52px'}}/>
+                      <img  src={profile_pic} style={{width:'53px',height:'52px'}} alt="profile_pic"/>
                     </div>
                     <div className="name">VINAY</div>
                 </Link>

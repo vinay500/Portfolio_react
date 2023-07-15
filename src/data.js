@@ -7,31 +7,41 @@ import todo_img from './img/todo project demo complete image.jpg';
 const products = [
     {
       id: 1,
+      title:'Tech Collab',
+      img:cowin_img,
+      desc:'Developed a web-based e-learning platform using React and Django, handling user authentication with Email integration, course management, and video playback functionality.',
+      skills:['Django','React','Django Rest API','HTML','CSS'],
+      view_link: "",
+      source_code_link:'https://bitbucket.org/vinay500/tech_collab/src/master/'
+    },
+    {
+      id: 2,
       title:'Cowin',
       img:cowin_img,
       desc:'Cowin is an website which is an replica of Cowin where Users can Register and Loign and can Book slots for Vaccination',
       skills:['Django','HTML','CSS'],
-      view_link: "#",
-      github_link:'https://github.com/vinay500/cowin'
+      view_link: "",
+      source_code_link:'https://github.com/vinay500/cowin'
     },
     {
-      id: 2,
+      id: 3,
+      title:'Portfolio',
+      img:portfolio_img,
+      desc:'This is my Portfolio showcasing my Projects and Skills',
+      skills:['Reactjs'],
+      view_link: "https://vinay500.github.io/Portfolio_react/",
+      source_code_link:'https://github.com/vinay500/LMS'
+    },
+    {
+      id: 4,
       title:'Todo App',
       img:todo_img,
       desc:'Website Users can Register , Login and add Book details',
       skills:['Django','React'],
-      view_link: "#",
-      github_link:'#'
+      view_link: "",
+      source_code_link:'https://github.com/vinay500/Todo'
     },
-    {
-      id: 3,
-      title:'Portolio',
-      img:portfolio_img,
-      desc:'This is my Portfolio showcasing my ',
-      skills:['Reactjs'],
-      view_link: "http://lama.dev",
-      github_link:'https://github.com/vinay500/LMS'
-    },
+    
     
   ];
 
