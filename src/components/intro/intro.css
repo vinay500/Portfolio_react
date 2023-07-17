@@ -88,6 +88,14 @@
     z-index: 1;
     animation: slide_in_from_right 1.5s;
 }
+.social_media_icons{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+.linkedin_icon{
+    padding-left: 20px;
+}
 @media screen and (max-width:1000px){
     .i-right{
         display: none;

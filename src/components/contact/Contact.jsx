@@ -7,6 +7,8 @@ import { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { useContext } from 'react';
 import { ThemeContext } from '../../context';
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
     const formRef = useRef()
@@ -34,47 +36,59 @@ const Contact = () => {
     return(
         <div id="Contact">
             <div className="c">
-            <div className="c-bg"></div>
-            <div className="c-wrapper">
-                <div className="c-left">
-                    <h1 className="c-title">Let's discuss your project</h1>
-                    <div className="c-info">
-                        <div className="c-info-item">
-                            <img src={Phone} alt=""  className='c-icon'/>
-                            +91 8555975391
+                <div className="c-bg"></div>
+                <div className="c-wrapper">
+                    <div className="c-left">
+                        <h1 className="c-title">Let's discuss your project</h1>
+                        <div className="c-info">
+                            <div className="c-info-item">
+                                <img src={Phone} alt=""  className='c-icon'/>
+                                +91 8555975391
+                            </div>
+                            <div className="c-info-item">
+                                <img src={Email} alt=""  className='c-icon'/>
+                                vinaymadugula1@gmail.com
+                            </div>
+                            <div className="c-info-item" id='address'>
+                                <img src={Address} alt=""  className='c-icon'/>
+                                1-85 Gambhirpoor, Dubbak, Siddipet, Telangana - 502108
+                            </div>
+                            <div className='social_media_icons'>
+                        <div>
+                           <a href='https://github.com/vinay500/' target='_blank' rel="noreferrer">
+                                <BsGithub size="2em" className='github_icon' color='#171515'/>
+                            </a> 
                         </div>
-                        <div className="c-info-item">
-                            <img src={Email} alt=""  className='c-icon'/>
-                            vinaymadugula1@gmail.com
+                        <div>
+                            <a href='https://www.linkedin.com/in/vinay-madugula-673897191/' target='_blank' rel="noreferrer">
+                                <BsLinkedin size="2em" color='#0077B5' className='linkedin_icon'/>
+                            </a>
                         </div>
-                        <div className="c-info-item" id='address'>
-                            <img src={Address} alt=""  className='c-icon'/>
-                            1-85 Gambhirpoor, Dubbak, Siddipet, Telangana - 502108
+                   </div>
                         </div>
                     </div>
-                </div>
-                <div className="c-right">
-                    <p className="c-desc">
-                        <b>What's your story?</b>  Get in touch Always available for freelancing if the right project comes along me
-                    </p>
-                    {done && 
-                        <p className='thank_you_msg_div'>
-                            <span className='thank_you_msg'>{ 'Thank You for sending the Request'}</span>
-                            <span className='thank_you_msg_close_btn' onClick={remove_thanks_msg}>X</span>
+                    <div className="c-right">
+                        <p className="c-desc">
+                            <b>What's your story?</b>  Get in touch Always available for freelancing if the right project comes along me
                         </p>
-                    }
-                    
-                    <form ref={formRef} onSubmit={handleSubmit}>
-                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Name' name='user_name' />
-                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Subject' name='user_subject' />
-                        <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Email' name='user_email' />
-                        <textarea style={{backgroundColor: darkMode && "#333"}} rows='5' placeholder='Message' name='message'/>
-                        <button>Submit</button>
+                        {done && 
+                            <p className='thank_you_msg_div'>
+                                <span className='thank_you_msg'>{ 'Thank You for sending the Request'}</span>
+                                <span className='thank_you_msg_close_btn' onClick={remove_thanks_msg}>X</span>
+                            </p>
+                        }
                         
-                    </form>
+                        <form ref={formRef} onSubmit={handleSubmit}>
+                            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Name' name='user_name' />
+                            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Subject' name='user_subject' />
+                            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder='Email' name='user_email' />
+                            <textarea style={{backgroundColor: darkMode && "#333"}} rows='5' placeholder='Message' name='message'/>
+                            <button>Submit</button>
+                            
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         
     )

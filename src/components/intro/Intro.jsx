@@ -1,6 +1,7 @@
 import './intro.css';
-import MyImg from '../../img/MyPic.png'
-
+import MyImg from '../../img/MyPic.png';
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Intro = () => {
     return(
@@ -18,10 +19,18 @@ const Intro = () => {
                             <div className="i-title-item">Full Stack Developer</div> */}
                         </div>
                     </div>
-                    {/* <p className="i-desc">
-                        I design and develop services for customers of all sizes,specializing in creating stylish, 
-                        modern websites, web services and online stores.
-                    </p> */}
+                   <div className='social_media_icons'>
+                        <div>
+                           <a href='https://github.com/vinay500/' target='_blank' rel="noreferrer">
+                                <BsGithub size="2em" className='github_icon' color='#171515'/>
+                            </a> 
+                        </div>
+                        <div>
+                            <a href='https://www.linkedin.com/in/vinay-madugula-673897191/' target='_blank' rel="noreferrer">
+                                <BsLinkedin size="2em" color='#0077B5' className='linkedin_icon'/>
+                            </a>
+                        </div>
+                   </div>
                 </div>
                 <svg
                     width="75"
