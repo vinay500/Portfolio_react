@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import { useContext } from 'react';
 import { ThemeContext } from './context';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Education from './components/education/education';
 
 const App = () => {
 
@@ -37,6 +38,7 @@ const App = () => {
                <Intro/>
                <About/>
                <ProductList/>
+               <Education/>
                <Contact/> 
               </div>
             </BrowserRouter>

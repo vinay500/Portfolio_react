@@ -79,7 +79,6 @@ import Skill from '../Skills/skill'
 // export default Product;
 
 const Product = (props)=>{
-    
     return(
         <div className='p'>
             <div id="p_demo_observer" className='p-demo'>

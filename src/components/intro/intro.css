@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* animation: slide_in_from_left 1.5s; */
 }
 .i-right{
     flex:1;
@@ -20,6 +21,7 @@
     /* justify-content: space-between; */
     line-height: 40px;
     align-items: center;
+    /* animation: slide_in_from_left 1.5s; */
 }
 #hello_my_name_is{
     font-weight: 200;
@@ -84,6 +86,7 @@
     top:0;
     right: 0;
     z-index: 1;
+    animation: slide_in_from_right 1.5s;
 }
 @media screen and (max-width:1000px){
     .i-right{
@@ -106,6 +109,31 @@
     }
     .i-title-item{
         font-size: 20px;
+    }
+}
+@keyframes slide_in_from_right{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes slide_in_from_left{
+    from{
+        opacity: 0;
+        /* transform: translateX(-100%); */
+        /* width: 0;
+        height: 0; */
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        /* width: fit-content;
+        height: fit-content; */
+        transform: scale(1);
     }
 }
 

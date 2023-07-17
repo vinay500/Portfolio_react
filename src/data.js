@@ -45,5 +45,29 @@ const products = [
     
   ];
 
-  export default products;
+export default products;
+export const education_details=[
+  {
+    id:1,
+    qualification:'Bachleor\'s',
+    school_name:'JB INSTITUTE OF ENGINEERING AND TECHNOLOGY',
+    duration:'2019-2023',
+    percentage:75,
+  },
+  {
+    id:2,
+    qualification:'Intermediate(12th)',
+    school_name:'SRI GAYATRI JUNIOR COLLEGE',
+    duration:'2017-2019',
+    percentage:95,
+  },
+  {
+    id:3,
+    qualification:'School(10th)',
+    school_name:'ZPHS GAMBHIRPOOR',
+    duration:'2017',
+    percentage:87,
+  },
+]
+ 
   

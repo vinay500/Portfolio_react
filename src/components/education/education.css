@@ -1,0 +1,33 @@
+.education{
+    width: 90%;
+    margin: 0 auto;
+}
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.education ul{
+
+}
+.education li{
+    list-style-type: none;
+    border-left:2px solid rgb(111, 111, 111);
+    padding: 10px;
+    border:1px solid black;
+    margin: 10px;
+}
+.education_duration{
+    font-weight: 700;
+    
+}
+.education_qualification{
+    font-weight: 600;
+}
+.education_school_name,.education_percentage{
+    color: grey;
+}
+.education li p{
+    line-height: 1.5;
+    padding: 1px;
+}

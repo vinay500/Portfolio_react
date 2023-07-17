@@ -28,6 +28,7 @@ import profile_pic from '../../img/green portfolio logo.png';
               <Link to='#Home' smooth><li>Home</li></Link>
               <Link to='#About' smooth><li>About</li></Link>
               <Link to='#Project' smooth><li>Projects</li></Link>
+              <Link to='#Education' smooth><li>Education</li></Link>
               <Link to='#Contact' smooth><li>Contact</li></Link>
               {/* <li className="toggle_li"><Toggle/></li> */}
            </ul>
@@ -43,6 +44,7 @@ import profile_pic from '../../img/green portfolio logo.png';
               <Link to='#Home' smooth onClick={toggleMenu}><li>Home</li></Link>
               <Link to='#About' smooth onClick={toggleMenu}><li>About</li></Link>
               <Link to='#Project' smooth onClick={toggleMenu}><li>Projects</li></Link>
+              <Link to='#Education' smooth onClick={toggleMenu}><li>Education</li></Link>
               <Link to='#Contact' smooth onClick={toggleMenu}><li>Contact</li></Link>
               {/* <li className="toggle_li"><Toggle/></li> */}
             </ul>

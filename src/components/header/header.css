@@ -115,6 +115,7 @@ a div{
   margin-top: 80px;
   opacity: 0.9;
   z-index: 99;
+  margin-bottom: 30px;
 }
 .mobile_header ul{
   display: flex;
