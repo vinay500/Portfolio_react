@@ -32,7 +32,7 @@ const Contact = () => {
         console.log(done)
     }
     return(
-        <div  id="Contact">
+        <div id="Contact">
             <div className="c">
             <div className="c-bg"></div>
             <div className="c-wrapper">
